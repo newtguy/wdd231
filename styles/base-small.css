@@ -1,0 +1,62 @@
+@media only screen and (max-width: 700px) {
+    nav a {
+        padding: 1.5rem 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* DOM */
+    body {
+        max-width: 600px;
+    }
+
+    header {
+        grid-template-columns: 60px auto 60px;
+        height: auto;
+        padding: 1rem;
+        position: relative;
+    }
+
+    /* nav menu */
+
+    nav {
+        display: none;
+        width: 100%;
+        height: fit-content;
+        margin-top: 1rem;
+        grid-column: span 3;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    li {
+        width: 100%;
+    }
+
+    nav a {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+    }
+
+    /* class */
+
+    .hamburger {
+        display: block;
+    }
+
+    /* id */
+
+
+    /* psuedo */
+
+}
