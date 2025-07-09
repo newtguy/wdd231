@@ -16,23 +16,50 @@
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <script src="scripts/nav.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="images/ghost-solid.svg" alt="ghost logo" loading="lazy">
-        <h2 id="title">Ghost Gallery</h2>
+        <img class="logo" src="images/airplane.svg" alt="ghost logo" loading="lazy">
+        <h2 id="title">Nate's Lounge</h2>
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
         <nav id="nav-bar">
             <ul>
                 <li><a class="current-nav" href="#">Home</a></li>
-                <li><a href="">Chamber</a></li>
-                <li><a href="">Final</a></li>
+                <li><a href="">Chamber Project</a></li>
+                <li><a href="">Final Project</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Whaddup G</h1>
+        <h1>Home</h1>
+        <div class="main-grid">
+            <section>
+                <h2>About Me</h2>
+                <p>Hi, welcome to my little corner of the internet! My name is Nate, and I am a commercially rated
+                    pilot. I have accumulated over 900 flight hours and am pursuing a Bachelor's Degree in Computer
+                    Science. I like incorporating coding into tasks I am challenged with in the real world. I plan to
+                    fly for a major airline one day!</p>
+            </section>
+            <section id="photo-section">
+                <h2>Student Photo</h2>
+                <img src="images/profile.webp" alt="Nate with Piper Archer" width="150" loading="lazy">
+            </section>
+        </div>
+        <section id="course-section">
+            <h2>Web Certificate Courses</h2>
+            <div class="course-grid">
+                <button id="all-button">All</button>
+                <button id="cse-button">CSE</button>
+                <button id="wdd-button">WDD</button>
+            </div>
+            <div class="spacer"></div>
+            <div class="course-grid"></div>
+            <p class="centered-p">The total credits for courses listed above is: <span id="credit-calculator"></span>
+            </p>
+        </section>
     </main>
     <footer>
         <div class="icon-container">
@@ -42,6 +69,12 @@
                     alt="LinkedIn" loading="lazy"></a>
             <a href="https://facebook.com/"><img class="icon" src="images/facebook.svg" alt="FaceBook"
                     loading="lazy"></a>
+        </div>
+        <div>
+            <p>&#169; <span id="current-year"></span> | Nathan Shelley | New Mexico, USA</p>
+        </div>
+        <div>
+            <p>Last Modification: <span id="last-modified"></span></p>
         </div>
     </footer>
 </body>
