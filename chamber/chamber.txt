@@ -1,0 +1,7 @@
+Chamber of commerce: it is a website to organize multiple local stores and commerces to serve better the community
+
+Home: attention grabbing (community info, weather, calls to action [button], business spotlights)
+Discover: locale history, current demographics, current events, image montage(best tourist spots)
+Directory: List of local businesses
+Join: Informs benefits of being member; perks of non-profit, silver and gold memberships
+ - directory listings, publications, trainings, social media work, luncheons, sponsorships, advertising, etc.

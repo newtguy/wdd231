@@ -1,0 +1,18 @@
+{
+    "familyName": "Shelley",
+    "date": "07/09/25",
+    "numFamilyMembers": 2,
+    "visitedByBishopric": true,
+    "familyMembers": [
+        {
+            "name": "kate",
+            "gender": "female",
+            "birthdate": "2/2"
+        },
+        {
+            "name": "bob",
+            "gender": "male",
+            "birthdate": "4/22"
+        }
+    ]
+}
