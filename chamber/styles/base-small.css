@@ -1,5 +1,68 @@
 @media only screen and (max-width: 600px) {
+
+    /* DOM */
     body {
         max-width: 600px;
     }
+
+    header {
+        grid-template-columns: 60px auto 60px;
+        height: auto;
+        padding: 0 1rem 1rem;
+        position: relative;
+    }
+
+    /* nav menu */
+
+    nav,
+    ul,
+    li,
+    nav a {
+        width: 100%;
+    }
+
+    nav {
+        display: none;
+        height: fit-content;
+        margin-top: 1rem;
+        grid-column: span 3;
+        order: 4;
+    }
+
+    nav.open {
+        display: block;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        margin: 0;
+        text-align: center;
+        border-bottom: 1px solid #DADADA;
+    }
+
+    /* class */
+
+    .hamburger-button {
+        display: block;
+    }
+
+    .hamburger-button.open {
+        color: red;
+    }
+
+    /* id */
+
+    #join-nav {
+        border-bottom: none;
+    }
+
+    /* pseudo */
+
+
+
 }

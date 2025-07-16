@@ -15,7 +15,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles.base-small.css">
+    <link rel="stylesheet" href="styles/base-small.css">
     <link rel="icon" href="images/st-george-favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,33 +25,39 @@
         rel="stylesheet">
     <!-- Scripts -->
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/nav-menu.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img src="images/outdoors-icon.svg" alt="Chamber Logo" height="40px" loading="lazy">
-        <h2>St. George Chamber of Commerce</h2>
-        <div class="cloud-coverage"></div>
+        <img class="logo" src="images/outdoors-icon.svg" alt="Chamber Logo" height="40px" loading="lazy">
+        <h2 id="title">St. George Chamber of Commerce</h2>
         <nav class="nav-bar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a id="current-page" href="#">Directory</a></li>
-                <li><a href="join.html">Join</a></li>
+                <li><a id="join-nav" href="join.html">Join</a></li>
             </ul>
         </nav>
+        <!-- <div class="cloud-coverage"></div> -->
+        <button class="hamburger-button">☰</button>
     </header>
     <main>
 
     </main>
     <footer>
         <div class="contact-container">
-
+            <p><strong>St.George Chamber of Commerce</strong><br>136 N. 100 E.<br>St. George, UT 84770<br>(435) 628-1650
+            </p>
         </div>
         <div class="icon-container">
-            <img src="" alt="" loading="lazy">
-            <img src="" alt="" loading="lazy">
-            <img src="" alt="" loading="lazy">
+            <a href="https://github.com/newtguy?tab=repositories"><img class="icon" src="images/github.svg" alt="GitHub"
+                    loading="lazy"></a>
+            <a href="https://linkedin.com/in/the-coding-pilot"><img class="icon" src="images/linkedin.svg"
+                    alt="LinkedIn" loading="lazy"></a>
+            <a href="https://facebook.com/"><img class="icon" src="images/facebook.svg" alt="FaceBook"
+                    loading="lazy"></a>
         </div>
         <div class="project-description-container">
             <p>WDD231 Class Project<br>Nathan Shelley<br>&copy; <span id="current-year"></span> St. George Chamber of
