@@ -116,10 +116,12 @@ footer {
 
 /* pseudo */
 
-button:hover {
+button:hover,
+a:hover {
     filter: brightness(1.1);
 }
 
-button:active {
+button:active,
+a:active {
     transform: scale(1.05);
 }
