@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Glass Tek LLC",
+            "address": "1250 west Sunset Blvd #A3 St. George UT 84770",
+            "phone": "(435) 429-3413",
+            "url": "https://glasstekpro.com",
+            "image": "window-frame-icon.svg",
+            "membership": 2
+        },
+        {
+            "name": "Jiffy Lube-River Road",
+            "address": "1393 S. River Road St. George UT 84790",
+            "phone": "(435) 703-9576",
+            "url": "https://www.jiffylubeutah.com/",
+            "image": "car-mechanic-icon.svg",
+            "membership": 1
+        },
+        {
+            "name": "Grease Monkey",
+            "address": "1986 West Sunset Blvd Saint George UT 84770",
+            "phone": "(435) 628-7878",
+            "url": "https://www.greasemonkeyauto.com/locations/us/ut/st.-george/1986-west-sunset-blvd",
+            "image": "wrench-icon.svg",
+            "membership": 1
+        },
+        {
+            "name": "GlitchBusters",
+            "address": "445 E. Saint George Blvd Suite #105 St. George UT 84770",
+            "phone": "(435) 414-8483",
+            "url": "https://www.nomoreglitch.com/",
+            "image": "ai-icon.svg",
+            "membership": 3
+        },
+        {
+            "name": "St George Design",
+            "address": "289 E. Munich Drive St. George UT 84790",
+            "phone": "(435) 668-1262",
+            "url": "https://stgeorgedesign.com/",
+            "image": "design-icon.svg",
+            "membership": 1
+        },
+        {
+            "name": "PC Innovation Computers",
+            "address": "809 S. Bluff St. St. George UT 84770",
+            "phone": "(435) 656-1975",
+            "url": "https://pcinnovation.com/",
+            "image": "computer-icon.svg",
+            "membership": 2
+        },
+        {
+            "name": "The Pasta Factory",
+            "address": "2 West St George Blvd. St. George UT 84770",
+            "phone": "(435) 674-3753",
+            "url": "https://stgeorgepizzafactory.com/",
+            "image": "pasta-icon.svg",
+            "membership": 3
+        }
+    ]
+}

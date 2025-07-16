@@ -62,7 +62,8 @@
     }
 
     /* pseudo */
-
-
+    nav a:hover {
+        background-color: #253452;
+    }
 
 }
