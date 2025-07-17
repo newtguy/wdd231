@@ -155,6 +155,13 @@ footer {
     height: fit-content;
 }
 
+.hero-container h1 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: black;
+}
+
 .hero-container img {
     display: block;
     width: 100%;

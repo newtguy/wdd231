@@ -55,6 +55,12 @@
         color: red;
     }
 
+    .hero-container h1 {
+        position: relative;
+        padding: 0;
+        margin-bottom: 3rem;
+    }
+
     .hero-container section {
         bottom: 0;
         right: 0;
