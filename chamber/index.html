@@ -26,6 +26,9 @@
     <!-- Scripts -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/nav-menu.js" defer></script>
+    <script type="module" src="scripts/index.js"></script>
+    <script type="module" src="scripts/weather-display.js" defer></script>
+
 </head>
 
 <body>
@@ -44,7 +47,33 @@
         <button class="hamburger-button">☰</button>
     </header>
     <main>
-
+        <div class="hero-container">
+            <section>
+                <p>Want the chance to show off your business? Enjoy the benefits of becoming a member today!</p>
+                <a href="join.html">Join Now!</a>
+            </section>
+            <img src="images/arch.webp" alt="Red Rock Arch" loading="lazy">
+        </div>
+        <div class="home-grid">
+            <section>
+                <h2>Events</h2>
+            </section>
+            <section class="current-weather">
+                <h2>Current Weather</h2>
+                <img src="" alt="" loading="lazy">
+                <p><span id="current-temp"></span></p>
+                <p><span id="current-descr"></span></p>
+            </section>
+            <section class="forecast">
+                <h2>Weather Forecast</h2>
+                <p><span id="today"></span>: <span id="day-one-temp"></span></p>
+                <p><span id="today+1"></span>: <span id="day-two-temp"></span></p>
+                <p><span id="today+2"></span>: <span id="day-three-temp"></span></p>
+            </section>
+        </div>
+        <div class="showcase">
+            <!-- section*3>h2>p>div>img>div>p*3 -->
+        </div>
     </main>
     <footer>
         <div class="contact-container">

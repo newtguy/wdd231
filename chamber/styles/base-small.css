@@ -55,7 +55,20 @@
         color: red;
     }
 
+    .hero-container section {
+        bottom: 0;
+        right: 0;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr;
+    }
+
     /* id */
+
+    #current-page {
+        border-left: 3px solid #DADADA;
+    }
 
     #join-nav {
         border-bottom: none;
