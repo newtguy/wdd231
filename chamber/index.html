@@ -27,13 +27,14 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/nav-menu.js" defer></script>
     <script type="module" src="scripts/index.js"></script>
-    <script type="module" src="scripts/weather-display.js" defer></script>
-
+    <script type="module" src="scripts/weather-display.js"></script>
+    <script type="module" src="scripts/weather-date.js"></script>
+    <script type="module" src="scripts/showcase.js"></script>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="images/outdoors-icon.svg" alt="Chamber Logo" height="40px" loading="lazy">
+        <img class="logo" src="images/outdoors-icon.svg" alt="Chamber Logo" height="40" loading="lazy">
         <h2 id="title">St. George Chamber of Commerce</h2>
         <nav class="nav-bar">
             <ul>
@@ -55,25 +56,34 @@
             <img src="images/arch.webp" alt="Red Rock Arch" loading="lazy">
         </div>
         <div class="home-grid">
-            <section>
+            <section class="events">
                 <h2>Events</h2>
+                <div class="flex">
+                    <img src="images/water-balloon.jpg" alt="Water Balloons in pot." loading="lazy">
+                    <p>Water Balloon Fights start next week at Vernon Worthen Park!</p>
+                </div>
             </section>
             <section class="current-weather">
                 <h2>Current Weather</h2>
-                <img src="" alt="" loading="lazy">
-                <p><span id="current-temp"></span></p>
-                <p><span id="current-descr"></span></p>
+                <div class="flex">
+                    <img id="weather-icon" src="images/facebook.svg" alt="current weather icon" loading="lazy">
+                    <div>
+                        <p><span id="current-temp"></span></p>
+                        <p><span id="current-descr"></span></p>
+                    </div>
+                </div>
+
             </section>
             <section class="forecast">
                 <h2>Weather Forecast</h2>
+                <div class="spacer"></div>
                 <p><span id="today"></span>: <span id="day-one-temp"></span></p>
                 <p><span id="today+1"></span>: <span id="day-two-temp"></span></p>
                 <p><span id="today+2"></span>: <span id="day-three-temp"></span></p>
             </section>
         </div>
-        <div class="showcase">
-            <!-- section*3>h2>p>div>img>div>p*3 -->
-        </div>
+        <h2 class="spacer">Local Businesses</h2>
+        <div class="showcase"></div>
     </main>
     <footer>
         <div class="contact-container">

@@ -47,7 +47,6 @@ header {
     gap: .5rem;
     width: 100%;
     height: fit-content;
-    margin: 1rem 0;
     align-items: center;
     background-color: var(--nav-background-color);
     color: var(--nav-text-color);
@@ -96,10 +95,27 @@ footer {
     justify-content: space-between;
     width: 100%;
     padding: 1rem;
+    margin-top: 2rem;
     border-top: var(--border);
 }
 
 /* class */
+.spacer {
+    margin: 1rem;
+}
+
+.center {
+    display: block;
+    width: fit-content;
+    margin: 0 auto
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .logo {
     display: block;
     width: 60px;
@@ -131,12 +147,6 @@ footer {
 
 .row:nth-child(even) {
     background-color: var(--alt---background-color);
-}
-
-.center {
-    display: block;
-    width: fit-content;
-    margin: 0 auto
 }
 
 .hero-container {
@@ -176,11 +186,50 @@ footer {
     gap: .5rem;
 }
 
+.events img {
+    width: 150px;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.events p {
+    width: 150px;
+}
+
+.forecast p {
+    font-size: medium;
+}
+
+.showcase {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+}
+
+.showcase section {
+    max-width: 250px;
+}
+
+.showcase img {
+    width: 60px;
+    height: auto;
+    margin: .5rem;
+}
+
+
+
+
+
 /* id */
 
 #title {
     padding: .5rem 0 .5rem 1rem;
     color: var(--nav-text-color);
+}
+
+#titulo {
+    margin: 1rem auto;
 }
 
 #current-page {
@@ -200,6 +249,13 @@ footer {
 
 #cards h2 {
     margin-bottom: .5rem;
+}
+
+#weather-icon {
+    width: 100px;
+    height: auto;
+    padding: 0;
+    margin: 0;
 }
 
 /* pseudo */
