@@ -1,3 +1,5 @@
+import { displayModal } from "./index.js";
+
 const courses = [
     {
         subject: 'CSE',
@@ -100,6 +102,9 @@ allButton.addEventListener('click', (event) => {
         insertionGrid.appendChild(newChild);
 
         creditCounter += course.credits;
+        newChild.addEventListener('click', () => {
+            displayModal(course);
+        });
     });
     creditCalculator.innerHTML = `<strong>${creditCounter}</strong>`;
 });
@@ -109,7 +114,7 @@ cseButton.addEventListener('click', (event) => {
     let newChild = null;
     let creditCounter = 0;
 
-    cseCourses = courses.filter((course) => course.subject == 'CSE');
+    let cseCourses = courses.filter((course) => course.subject == 'CSE');
     cseCourses.forEach(course => {
         newChild = document.createElement('p');
         newChild.classList.add("course");
@@ -120,6 +125,9 @@ cseButton.addEventListener('click', (event) => {
         insertionGrid.appendChild(newChild);
 
         creditCounter += course.credits;
+        newChild.addEventListener('click', () => {
+            displayModal(course);
+        });
     });
     creditCalculator.innerHTML = `<strong>${creditCounter}</strong>`;
 });
@@ -129,7 +137,7 @@ wddButton.addEventListener('click', (event) => {
     let newChild = null;
     let creditCounter = 0;
 
-    wddCourses = courses.filter((course) => course.subject == 'WDD');
+    let wddCourses = courses.filter((course) => course.subject == 'WDD');
     wddCourses.forEach(course => {
         newChild = document.createElement('p');
         newChild.classList.add("course");
@@ -140,6 +148,9 @@ wddButton.addEventListener('click', (event) => {
         insertionGrid.appendChild(newChild);
 
         creditCounter += course.credits;
+        newChild.addEventListener('click', () => {
+            displayModal(course);
+        });
     });
     creditCalculator.innerHTML = `<strong>${creditCounter}</strong>`;
 });
