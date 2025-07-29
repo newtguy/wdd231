@@ -40,18 +40,27 @@
                 <li><a id="current-page" id="join-nav" href="#">Join</a></li>
             </ul>
         </nav>
-        <!-- <div class="cloud-coverage"></div> -->
         <button class="hamburger-button">☰</button>
     </header>
     <main>
         <form method="get" action="/thankyou.html">
             <label>
                 First Name:
-                <input type="text" name="first" autocomplete="given-name">
+                <input type="text" required name="first" title="Enter your first name here" autocomplete="given-name">
             </label>
             <label>
                 Last Name:
-                <input type="text" name="last" autocomplete="family-name">
+                <input type="text" required name="last" title="Enter your last name here" autocomplete="family-name">
+            </label>
+            <label>
+                Organization:
+                <input type="text" name="organization" title="Enter at least 7 letters"
+                    autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
+            </label>
+            <label>
+                Email Address:
+                <input type="email" required name="email" title="Enter your email here" autocomplete="email"
+                    placeholder="example@gmail.com">
             </label>
         </form>
     </main>
