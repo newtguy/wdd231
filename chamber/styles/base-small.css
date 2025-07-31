@@ -1,3 +1,14 @@
+/* form help */
+@media only screen and (max-width: 850px) {
+    .form-membership-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #grid-helper {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
 
     /* DOM */
@@ -45,6 +56,10 @@
         border-bottom: 1px solid #DADADA;
     }
 
+    form {
+        margin-left: 1rem;
+    }
+
     /* class */
 
     .hamburger-button {
@@ -67,6 +82,10 @@
     }
 
     .home-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-membership-grid {
         grid-template-columns: 1fr;
     }
 

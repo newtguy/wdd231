@@ -26,6 +26,7 @@
     <!-- Scripts -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/nav-menu.js" defer></script>
+    <script src="scripts/membership-modal.js" defer></script>
 </head>
 
 <body>
@@ -37,32 +38,79 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discover.html">Discover</a></li>
                 <li><a href="directory.html">Directory</a></li>
-                <li><a id="current-page" id="join-nav" href="#">Join</a></li>
+                <li><a id="current-page" href="#">Join</a></li>
             </ul>
         </nav>
         <button class="hamburger-button">☰</button>
     </header>
     <main>
-        <form method="get" action="/thankyou.html">
-            <label>
-                First Name:
-                <input type="text" required name="first" title="Enter your first name here" autocomplete="given-name">
-            </label>
-            <label>
-                Last Name:
-                <input type="text" required name="last" title="Enter your last name here" autocomplete="family-name">
-            </label>
-            <label>
-                Organization:
-                <input type="text" name="organization" title="Enter at least 7 letters"
-                    autocomplete="organization-title" pattern="[A-Za-z -]{7,}">
-            </label>
-            <label>
-                Email Address:
-                <input type="email" required name="email" title="Enter your email here" autocomplete="email"
-                    placeholder="example@gmail.com">
-            </label>
-        </form>
+        <h1 id="titulo">Become a Member!</h1>
+        <div class="form-membership-grid">
+            <div id="grid-helper"></div>
+            <form method="get" action="/thankyou.html">
+                <label>
+                    First Name:
+                    <input type="text" required name="first" title="Enter your first name here"
+                        autocomplete="given-name">
+                </label>
+                <label>
+                    Last Name:
+                    <input type="text" required name="last" title="Enter your last name here"
+                        autocomplete="family-name">
+                </label>
+                <label>
+                    Title within Organization:
+                    <input type="text" name="organization" title="Enter at least 7 letters"
+                        autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" placeholder="Management Director">
+                </label>
+                <label>
+                    Email Address:
+                    <input type="email" required name="email" title="Enter your email here" autocomplete="email"
+                        placeholder="example@gmail.com">
+                </label>
+                <label>
+                    Phone Number:
+                    <input type="tel" required name="tel" title="Enter your phone nubmer here" autocomplete="tel"
+                        placeholder="555-555-5555">
+                </label>
+                <label>
+                    Name of Organization:
+                    <input type="text" required name="email" title="Enter your organization's name here"
+                        autocomplete="organization">
+                </label>
+                <label>
+                    Membership Level:
+                    <select id="membership" name="membership">
+                        <option value="">--Please choose an option--</option>
+                        <option value="np">Non-Profit</option>
+                        <option value="bronze">Bronze</option>
+                        <option value="silver">Silver</option>
+                        <option value="gold">Gold</option>
+                    </select>
+                </label>
+                <input type="hidden" name="form_timestamp" id="form_timestamp">
+                <button id="submit-button" type="submit">Join Now</button>
+            </form>
+            <div class="member-level-container">
+                <h2 class="center">Membership Tiers</h2>
+                <section class="member-levels appear-animation">
+                    <h3>Non-Profit</h3>
+                    <p id="non-profit-button">More Info</p>
+                </section>
+                <section class="member-levels appear-animation delay-slight">
+                    <h3>Bronze</h3>
+                    <p id="bronze-button">More Info</p>
+                </section>
+                <section class="member-levels appear-animation delay-medium">
+                    <h3>Silver</h3>
+                    <p id="silver-button">More Info</p>
+                </section>
+                <section class="member-levels appear-animation delay-long">
+                    <h3>Gold</h3>
+                    <p id="gold-button">More Info</p>
+                </section>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="contact-container">
@@ -83,6 +131,11 @@
             </p>
         </div>
     </footer>
+
+    <dialog class="modal" id="membership-modal">
+        <button class="close-button" popovertarget="membership-info" popovertargetaction="hide">❌</button>
+        <div id="modal-content-holder"></div>
+    </dialog>
 </body>
 
 </html>

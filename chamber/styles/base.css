@@ -86,6 +86,28 @@ button,
     border-radius: 10px;
     color: var(--background-color);
     background-color: var(--accent-color);
+    cursor: pointer;
+}
+
+form {
+    max-width: 450px;
+    padding: 1rem;
+    border: var(--border);
+    border-radius: 10px;
+    background-color: var(--alt---background-color);
+}
+
+form label,
+form input,
+form select {
+    display: block;
+    width: 100%;
+}
+
+form input,
+form select {
+    margin: .3rem 0 1rem;
+    padding: .5rem;
 }
 
 footer {
@@ -97,6 +119,35 @@ footer {
     padding: 1rem;
     margin-top: 2rem;
     border-top: var(--border);
+}
+
+dialog {
+    margin: 25% auto;
+    padding: 1rem;
+    max-width: 40ch;
+    box-shadow: 0 0 1rem rgb(0 0 0 / 30%);
+}
+
+dialog[open] {
+    background-color: var(--background-color);
+    border-radius: 5px;
+}
+
+dialog .close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 0;
+    background-color: var(--background-color);
+    color: red;
+}
+
+dialog::backdrop {
+    background: rgb(0 0 0 / 70%);
+}
+
+dialog p {
+    margin-top: .5rem;
 }
 
 /* class */
@@ -224,9 +275,31 @@ footer {
     margin: .5rem;
 }
 
+/* form grid */
 
+.form-membership-grid {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: .7fr 1fr .7fr;
+}
 
+.member-level-container h2 {
+    margin-top: 6rem;
+}
 
+.member-levels {
+    border-radius: 5px 20px 5px 20px;
+    margin: 1rem;
+}
+
+.member-levels p {
+    width: fit-content;
+    padding: .3rem;
+    border: var(--border);
+    margin-top: .5rem;
+    background-color: var(--alt---background-color);
+}
 
 /* id */
 
@@ -236,6 +309,7 @@ footer {
 }
 
 #titulo {
+    width: fit-content;
     margin: 1rem auto;
 }
 
@@ -265,13 +339,19 @@ footer {
     margin: 0;
 }
 
+#submit-button {
+    width: 100%;
+    margin: 1rem 0;
+}
+
 /* pseudo */
 nav a:hover {
     border-bottom: var(--border-light);
 }
 
 button:hover,
-a:hover {
+a:hover,
+.member-levels p:hover {
     filter: brightness(1.1);
 }
 
@@ -280,10 +360,45 @@ a:hover {
 }
 
 button:active,
-a:active {
+a:active,
+.member-levels p:active {
     transform: scale(.95);
 }
 
 .location::before {
     content: "📍";
+}
+
+/* animations */
+
+@keyframes appearFromBelow {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+        background-color: var(--alt---background-color);
+        /* start 30px lower */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        background-color: var(--background-color);
+    }
+}
+
+.appear-animation {
+    opacity: 0;
+    animation: appearFromBelow 0.6s ease-out forwards;
+}
+
+.delay-slight {
+    animation-delay: 0.2s;
+}
+
+.delay-medium {
+    animation-delay: 0.4s;
+}
+
+.delay-long {
+    animation-delay: 0.6s;
 }
