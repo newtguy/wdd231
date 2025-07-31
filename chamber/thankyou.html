@@ -26,6 +26,7 @@
     <!-- Scripts -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/nav-menu.js" defer></script>
+    <script src="scripts/retrieve-form-data.js" defer></script>
 </head>
 
 <body>
@@ -44,8 +45,12 @@
         <button class="hamburger-button">☰</button>
     </header>
     <main>
-        <h1 id="title">Thank You!</h1>
-        <p>Your submission has been received successfully. </p>
+        <h1>Thank You!</h1>
+        <section>
+            <h2>Here are the details of your submission.</h2>
+            <pre><span id="form-data-display"></span></pre>
+        </section>
+
     </main>
     <footer>
         <div class="contact-container">

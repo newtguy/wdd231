@@ -27,6 +27,7 @@
     <script src="scripts/date.js" defer></script>
     <script src="scripts/nav-menu.js" defer></script>
     <script src="scripts/membership-modal.js" defer></script>
+    <script src="scripts/form-submission.js" defer></script>
 </head>
 
 <body>
@@ -47,7 +48,7 @@
         <h1 id="titulo">Become a Member!</h1>
         <div class="form-membership-grid">
             <div id="grid-helper"></div>
-            <form method="get" action="/thankyou.html">
+            <form method="get" action="thankyou.html">
                 <label>
                     First Name:
                     <input type="text" required name="first" title="Enter your first name here"
@@ -60,7 +61,7 @@
                 </label>
                 <label>
                     Title within Organization:
-                    <input type="text" name="organization" title="Enter at least 7 letters"
+                    <input type="text" name="organization-title" title="Enter at least 7 letters"
                         autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" placeholder="Management Director">
                 </label>
                 <label>
@@ -75,7 +76,7 @@
                 </label>
                 <label>
                     Name of Organization:
-                    <input type="text" required name="email" title="Enter your organization's name here"
+                    <input type="text" required name="organization" title="Enter your organization's name here"
                         autocomplete="organization">
                 </label>
                 <label>
@@ -88,7 +89,11 @@
                         <option value="gold">Gold</option>
                     </select>
                 </label>
-                <input type="hidden" name="form_timestamp" id="form_timestamp">
+                <label>
+                    Description of Organization:
+                    <input type="textarea" name="email" title="Enter your organization's description here">
+                </label>
+                <input type="hidden" name="timestamp" id="timestamp">
                 <button id="submit-button" type="submit">Join Now</button>
             </form>
             <div class="member-level-container">
