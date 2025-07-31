@@ -99,13 +99,16 @@ form {
 
 form label,
 form input,
-form select {
+form select,
+form textarea {
     display: block;
     width: 100%;
+    max-width: 100%;
 }
 
 form input,
-form select {
+form select,
+form textarea {
     margin: .3rem 0 1rem;
     padding: .5rem;
 }
