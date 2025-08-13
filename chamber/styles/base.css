@@ -347,6 +347,51 @@ dialog p {
     margin: 1rem 0;
 }
 
+/* Discover page - scenic */
+
+#scenic-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#scenic-display div {
+    margin: 1rem 8px;
+    border: var(--border-highlight);
+    background-color: var(--alt---background-color);
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photo"
+        "description"
+        "location";
+}
+
+#scenic-display div figure {
+    grid-area: photo;
+}
+
+#scenic-display div figure img {
+    width: 100%;
+}
+
+#scenic-display div h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+#scenic-display div p {
+    margin: 10px;
+    grid-area: description;
+}
+
+#scenic-display div address {
+    margin: 10px;
+    grid-area: location;
+}
+
 /* pseudo */
 nav a:hover {
     border-bottom: var(--border-light);

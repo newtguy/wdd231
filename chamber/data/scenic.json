@@ -1,0 +1,52 @@
+{
+    "scenes": [
+        {
+            "title": "Zion National Park",
+            "img": "zion-park.webp",
+            "address": "1 Zion Park Blvd, Springdale, UT 84767",
+            "description": "A national park with steep red cliffs, slot canyons, and popular hikes such as Angels Landing and The Narrows."
+        },
+        {
+            "title": "Snow Canyon State Park",
+            "img": "snow-canyon.webp",
+            "address": "1002 Snow Canyon Dr, Ivins, UT 84738",
+            "description": "A state park with sandstone cliffs, lava flows, and short trails through desert terrain."
+        },
+        {
+            "title": "St. George Temple",
+            "img": "st-george-temple.webp",
+            "address": "250 E 400 S, St. George, UT 84770",
+            "description": "A white Latter-day Saint temple built in 1877, set against a red rock backdrop."
+        },
+        {
+            "title": "Pioneer Park",
+            "img": "pioneer-park.webp",
+            "address": "375 Red Hills Pkwy, St. George, UT 84770",
+            "description": "A city park with red rock formations, small slot canyons, and views of St. George."
+        },
+        {
+            "title": "Dinosaur Discovery Site",
+            "img": "dinosaur-discovery.webp",
+            "address": "2180 E Riverside Dr, St. George, UT 84790",
+            "description": "A museum with preserved dinosaur tracks and fossil exhibits from the Early Jurassic period."
+        },
+        {
+            "title": "Tuacahn Amphitheatre",
+            "img": "tuacahn-center.webp",
+            "address": "1100 Tuacahn Dr, Ivins, UT 84738",
+            "description": "An outdoor theater in a red rock canyon that hosts musicals, concerts, and events."
+        },
+        {
+            "title": "St. George Art Museum",
+            "img": "art-museum-st-george.webp",
+            "address": "47 E 200 N, St. George, UT 84770",
+            "description": "A small museum with changing exhibits of regional, Western, and Native American art."
+        },
+        {
+            "title": "Red Cliffs Desert Reserve",
+            "img": "red-cliff.webp",
+            "address": "10 N 100 E, St. George, UT 84770",
+            "description": "A protected area with hiking trails, desert plants, and wildlife habitat."
+        }
+    ]
+}

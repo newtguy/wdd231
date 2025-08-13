@@ -99,6 +99,18 @@
         border-bottom: none;
     }
 
+    #scenic-display div {
+        grid-template-areas:
+            "name"
+            "photo"
+            "description"
+            "location";
+    }
+
+    #scenic-display div figure img {
+        width: 100%;
+    }
+
     /* pseudo */
     nav a:hover {
         background-color: #253452;

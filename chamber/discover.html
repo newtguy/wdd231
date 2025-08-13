@@ -16,6 +16,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/base-small.css">
     <link rel="icon" href="images/st-george-favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,11 +27,13 @@
     <!-- Scripts -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/nav-menu.js" defer></script>
+    <script src="scripts/discover.js" type="module"></script>
+    <script src="scripts/discoverDate.js" defer></script>
 </head>
 
 <body>
     <header>
-        <img class="logo" src="images/outdoors-icon.svg" alt="Chamber Logo" height="40px" loading="lazy">
+        <img class="logo" src="images/outdoors-icon.svg" alt="Chamber Logo" height="40" loading="lazy">
         <h2 id="title">St. George Chamber of Commerce</h2>
         <nav class="nav-bar">
             <ul>
@@ -44,7 +47,8 @@
         <button class="hamburger-button">☰</button>
     </header>
     <main>
-
+        <h2 id="message" class="spacer"></h2>
+        <div id="scenic-display"></div>
     </main>
     <footer>
         <div class="contact-container">

@@ -1,0 +1,26 @@
+@media only screen and (max-width: 64rem) {
+    #scenic-display {
+        grid-template-columns: 1fr;
+    }
+
+    #scenic-display div {
+        grid-template-areas:
+            "photo name"
+            "photo description"
+            "photo location";
+    }
+
+    #scenic-display div figure img {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    #scenic-display figure img:hover {
+        border-radius: 8px;
+
+        box-shadow:
+            0 0 20px rgba(45, 137, 239, 0.5),
+            0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+}
