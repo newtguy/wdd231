@@ -21,6 +21,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <!-- Scripts -->
+    <script src="scripts/displayICAO.js" defer></script>
+    <script src="scripts/weather.js" type="module"></script>
 </head>
 
 <body>
@@ -34,10 +37,10 @@
     </header>
 
     <main>
-        <h2>Current Weather</h2>
-        <div id="weatherInfo">
-            <!-- Weather information will be displayed here -->
-        </div>
+        <h2 class="center">Current Weather</h2>
+        <h3 id="displayICAO" class="center"></h3>
+        <div id="displayWeather"></div>
+        <a class="mainButton return" href="index.html">Return Home</a>
     </main>
 
     <footer>

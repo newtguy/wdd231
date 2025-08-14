@@ -1,15 +1,13 @@
-// if button = airports
-let url = "https://api.aviationapi.com/v1/airports";
-
 let dataCache = null;
 
-const getAviationData = async () => {
+const getAviationData = async (url, requestOptions = null) => {
     if (dataCache !== null) {
         return dataCache;
     }
 
     try {
-        const response = await fetch(url);
+        const response = await fetch(url, requestOptions);
+
         if (response.ok) {
             const data = await response.json();
             dataCache = data;

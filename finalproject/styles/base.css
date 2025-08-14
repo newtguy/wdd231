@@ -125,6 +125,12 @@ dialog .closeButton {
 }
 
 /* class */
+.center {
+    display: block;
+    margin: 1rem auto;
+    text-align: center;
+}
+
 .hero {
     position: relative;
     width: 100%;
@@ -134,7 +140,6 @@ dialog .closeButton {
 
 .hero img {
     width: 100%;
-
 }
 
 .hero h2 {
@@ -176,10 +181,51 @@ dialog .closeButton {
     border-radius: 10px;
     color: var(--background-color);
     background-color: var(--primary-color);
-    transition: background 0.3s ease,
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    transition: transform 0.2s, box-shadow 0.2s;
 }
+
+.return {
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+    margin: 1rem auto;
+}
+
+/* weather classes */
+
+.card {
+    border: var(--border);
+    border-radius: 12px;
+    background-color: var(--alt-background-color);
+    padding: 1rem;
+    max-width: 400px;
+    margin: 1rem auto;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.card h3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+.flightCategory {
+    padding: 4px 8px;
+    border-radius: 6px;
+    color: var(--nav-text-color);
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.weatherCard p {
+    margin: 4px 0;
+}
+
+.weatherCard .details p {
+    margin-left: 10px;
+}
+
 
 /* id */
 #currentPage {
@@ -189,7 +235,7 @@ dialog .closeButton {
 
 /* pseudo-class */
 .mainButton:hover {
-    background: linear-gradient(90deg, #42A5F5, #2196F3);
+    background: #42A5F5;
     transform: translateY(-2px);
     box-shadow: 0px 4px 12px rgb(0 0 0 / 0.2);
 }
@@ -201,7 +247,6 @@ dialog .closeButton {
 
 .closeButton:hover {
     transform: scale(105%);
-
 }
 
 nav a:hover {

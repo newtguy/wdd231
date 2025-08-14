@@ -1,11 +1,14 @@
-function displayICAO(params) {
+function displayICAO() {
     const displayContainer = document.getElementById('displayICAO');
 
-    let airportCode = params.get('airportCode');
-    let timestamp = new Date(params.get('timestamp')).toLocaleString();
-
-    displayContainer.textContent =
-        `Airport: ${airportCode}\nSubmitted: ${timestamp}`;
+    const params = new URLSearchParams(window.location.search);
+    const airportCode = params.get('airportCode');
+    if (airportCode == null) {
+        displayContainer.innerHTML = 'Please return to the home page to select an airport.';
+    } else {
+        displayContainer.innerHTML =
+            `<strong>Airport</strong>: ${airportCode}`;
+    }
 }
 
 displayICAO();
