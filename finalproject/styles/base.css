@@ -210,6 +210,14 @@ dialog .closeButton {
     margin-bottom: 0.5em;
 }
 
+.card p {
+    margin: 4px 0;
+}
+
+.card .details p {
+    margin-left: 10px;
+}
+
 .flightCategory {
     padding: 4px 8px;
     border-radius: 6px;
@@ -217,15 +225,6 @@ dialog .closeButton {
     font-weight: bold;
     font-size: 0.9em;
 }
-
-.weatherCard p {
-    margin: 4px 0;
-}
-
-.weatherCard .details p {
-    margin-left: 10px;
-}
-
 
 /* id */
 #currentPage {
@@ -242,7 +241,7 @@ dialog .closeButton {
 
 .mainButton:active {
     transform: translateY(1px);
-    box-shadow: 0px 2px 6px rgba(0 0 0 / 0.2);
+    box-shadow: 0px 2px 6px rgb(0 0 0 / 0.2);
 }
 
 .closeButton:hover {
@@ -256,7 +255,7 @@ nav a:hover {
 
 nav a:active {
     transform: translateY(1px);
-    background-color: rgba(255, 183, 3, 0.2);
+    background-color: rgb(255 183 3 / 0.2);
 }
 
 /* pseudo-element */
