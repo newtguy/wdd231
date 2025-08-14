@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Airport WX</title>
+    <meta name="author" content="Nathan Shelley">
+    <meta name="description" content="Airport Weather Tool for Pilots and Aviation Enthusiasts">
+    <!-- Meta Tags -->
+    <meta property="og:title" content="Home - Airport WX">
+    <meta property="og:description"
+        content="Welcome to Airport WX! This tool features airport information and current weather!">
+    <meta property="og:url" content="https://newtguy.github.io/wdd231/finalproject/index.html">
+    <meta property="og:image" content="https://newtguy.github.io/wdd231/finalproject/images/cessna-sunny.webp">
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="icon" href="images/prop-favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Scripts -->
+    <script src="scripts/airportChoice.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Airport WX</h1>
+        <nav>
+            <a id="currentPage" href="#">Home</a>
+            <a href="weather.html">Weather</a>
+            <a href="info.html">Airport Info</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h2>Welcome to Airport WX!</h2>
+            <img src="images/t-tail-clear.webp">
+        </div>
+
+        <section class="airportChoice">
+            <h3>What are you looking for today?</h3>
+            <button id="weatherButton" class="mainButton">Weather</button>
+            <button id="infoButton" class="mainButton">Airport Info</button>
+        </section>
+        <p id="message"></p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Airport WX | Nathan Shelley | WDD231</p>
+    </footer>
+
+    <dialog class="dialogForm">
+        <button class="closeButton" popovertarget="dialogForm" popovertargetaction="hide">❌</button>
+        <h2>Search for an Airport</h2>
+        <form class="airportForm" method="get">
+            <label for="airportCode">Enter Airport Code (ICAO):</label>
+            <input type="text" id="airportCode" name="airportCode" title="Enter 3-4 letter airport code"
+                pattern="[A-Za-z]{3,4}" placeholder="KPWA" required>
+            <button class="mainButton" type="submit">Search</button>
+        </form>
+    </dialog>
+</body>
+
+</html>

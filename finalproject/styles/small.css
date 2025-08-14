@@ -1,0 +1,6 @@
+@media screen and (max-width: 600px) {
+    .hero h2 {
+        max-width: 200px;
+
+    }
+}
