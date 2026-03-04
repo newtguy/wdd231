@@ -14,19 +14,6 @@ const courses = [
         completed: true
     },
     {
-        subject: 'WDD',
-        number: 130,
-        title: 'Web Fundamentals',
-        credits: 2,
-        certificate: 'Web and Computer Programming',
-        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
-        technology: [
-            'HTML',
-            'CSS'
-        ],
-        completed: true
-    },
-    {
         subject: 'CSE',
         number: 111,
         title: 'Programming with Functions',
@@ -47,6 +34,74 @@ const courses = [
         description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
         technology: [
             'C#'
+        ],
+        completed: true
+    },
+    {
+        subject: 'CSE',
+        number: 235,
+        title: 'Data Structures and Algorithms',
+        credits: 3,
+        certificate: 'Software Development',
+        description: '(Transfer Credit from BYU) Fundamental data structures and algorithms of computer science; basic algorithm analysis; recursion; sorting and searching; lists, stacks, queues, trees, hashing; object-oriented data abstraction.',
+        technology: [
+            'C++'
+        ],
+        completed: true
+    },
+    {
+        subject: 'CSE',
+        number: 270,
+        title: 'Software Testing',
+        credits: 3,
+        certificate: 'Web Development',
+        description: 'Software Testing is a systematic process of verifying requirements and design elements, features, or standards against the implementation to increase product success. The verification process uses a set of test paths starting from the minor units up to the entire deliverable system. Predetermined or live data is used to build confidence that the product works right as specified. CSE 270 will explore testing standards, techniques, tools, and cases.',
+        technology: [
+            'Python',
+            'Postman',
+            'HTML',
+            'CSS',
+            'JavaScript'
+        ],
+        completed: true
+    },
+    {
+        subject: 'CSE',
+        number: 310,
+        title: 'Applied Programming',
+        credits: 3,
+        certificate: 'Software Development',
+        description: 'Independently research and create computing solutions in a variety of languages and domains. Contribute and interact with peers to successfully develop software. The student who successfully completes the course will have all the tools necessary including a Personal Software Portfolio to assist in finding an internship or career employment.',
+        technology: [
+            'C++',
+            'Kotlin',
+            'Python'
+        ],
+        completed: true
+    },
+    {
+        subject: 'ITM',
+        number: 111,
+        title: 'Introduction to Databases',
+        credits: 3,
+        certificate: 'Web and Computer Programming',
+        description: 'This course teaches the basic elements of database management systems. It introduces students to the concepts of logical and physical relationships in a data model and the concept of inner join. Students will use a computer aided software engineering (CASE) tool to design, create and query a database.',
+        technology: [
+            'MySQL',
+            'WorkBench'
+        ],
+        completed: true
+    },
+    {
+        subject: 'WDD',
+        number: 130,
+        title: 'Web Fundamentals',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
+        technology: [
+            'HTML',
+            'CSS'
         ],
         completed: true
     },
@@ -76,7 +131,21 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
+    },
+    {
+        subject: 'WDD',
+        number: 330,
+        title: 'Frontend Web Development II',
+        credits: 2,
+        certificate: 'Web Development',
+        description: 'This course dives deeper into building dynamic web applications using the power of pure JavaScript, HTML, CSS, and Node.js—no frameworks required! Students gain a stronger foundation in web frontend development and learn how to create interactive user interfaces, handle data, consume APIs, manage a collaborative project, and build complete web applications from scratch in a team environment.',
+        technology: [
+            'HTML',
+            'CSS',
+            'JavaScript'
+        ],
+        completed: true
     }
 ]
 
